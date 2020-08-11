@@ -1,0 +1,28 @@
+nav {
+  font-family: 'Bungee', sans-serif;
+  height: 120px;
+  background-color: #FF9F1C;
+  display: flex;
+  align-content: flex-start;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+ }
+
+span {
+  font-family: 'Bungee', sans-serif;
+  font-size: 1.6em;
+  color: #FFFFFF; 
+  padding: 1.5em;
+}
+
+.compose {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.95em;
+  color: #FFFFFF;
+  padding: 1.5em;
+}
+
+b, strong {
+  font-weight: 700;
+}

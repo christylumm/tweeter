@@ -1,0 +1,23 @@
+header {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFBF69;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+}
+
+.avatar-name {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  color: #A35F00;
+  font-size: 1.5em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+b, strong {
+  font-weight: 700;
+}
