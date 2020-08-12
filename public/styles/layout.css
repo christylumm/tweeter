@@ -19,12 +19,14 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 120px;
 }
 
 main.container {
   display: flex;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   width: 90%;
   background-color: #f4f1ec;
   padding-top: 1.5em;

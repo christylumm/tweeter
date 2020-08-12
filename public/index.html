@@ -19,6 +19,8 @@
 
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+    <link rel="stylesheet" href="/styles/posted-tweet.css" type="text/css" />
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -28,11 +30,14 @@
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script src="https://kit.fontawesome.com/c514846d4c.js" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
+    <nav class="fixed">
       <span>tweeter</span>
       <p class="compose"><b>Write</b> a new tweet</p>
       
@@ -60,6 +65,90 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+
+      <section class ="tweet-container">
+        <article class ="tweet">
+          <header>
+            <div class="profile-pic">
+              <i class="fas fa-apple-alt"></i></i>&nbsp&nbsp
+              <p>Eliza</p>
+            </div>
+            <div class="handle">
+              <p>@Schuyler</p>
+            </div>
+          </header>
+
+          <main class="posted-tweet">
+            <p class="tweet-content">Ice cream ice cream chupa chups biscuit muffin dragée caramels jelly-o sugar plum. Topping topping brownie wafer cake muffin.</p>
+          </main>
+
+          <footer>
+            <p class="timestamp">10 days ago</p>
+            <span class="icons">
+              <i class="fas fa-flag"></i>&nbsp&nbsp
+              <i class="fas fa-retweet"></i>&nbsp&nbsp
+              <i class="fas fa-heart"></i>
+            </span>
+            
+          </footer>
+        </article>
+      </section>
+
+      <section class ="tweet-container">
+        <article class ="tweet">
+          <header>
+            <div class="profile-pic">
+              <i class="fas fa-apple-alt"></i></i>&nbsp&nbsp
+              <p>George</p>
+            </div>
+            <div class="handle">
+              <p>@Washington</p>
+            </div>
+          </header>
+
+          <main class="posted-tweet">
+            <p class="tweet-content">Ice cream ice cream chupa chups biscuit muffin dragée caramels jelly-o sugar plum. Topping topping brownie wafer cake muffin.</p>
+          </main>
+
+          <footer>
+            <p class="timestamp">10 days ago</p>
+            <span class="icons">
+              <i class="fas fa-flag"></i>&nbsp&nbsp
+              <i class="fas fa-retweet"></i>&nbsp&nbsp
+              <i class="fas fa-heart"></i>
+            </span>
+            
+          </footer>
+        </article>
+      </section>
+
+      <section class ="tweet-container">
+        <article class ="tweet">
+          <header>
+            <div class="profile-pic">
+              <i class="fas fa-apple-alt"></i></i>&nbsp&nbsp
+              <p>Alexander</p>
+            </div>
+            <div class="handle">
+              <p>@Hamilton</p>
+            </div>
+          </header>
+
+          <main class="posted-tweet">
+            <p class="tweet-content">Ice cream ice cream chupa chups biscuit muffin dragée caramels jelly-o sugar plum. Topping topping brownie wafer cake muffin.</p>
+          </main>
+
+          <footer>
+            <p class="timestamp">10 days ago</p>
+            <span class="icons">
+              <i class="fas fa-flag"></i>&nbsp&nbsp
+              <i class="fas fa-retweet"></i>&nbsp&nbsp
+              <i class="fas fa-heart"></i>
+            </span>
+            
+          </footer>
+        </article>
       </section>
     </main>
   </body>
