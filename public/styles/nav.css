@@ -6,7 +6,7 @@ nav {
   align-content: flex-start;
   align-items: baseline;
   justify-content: space-between;
-  width: 100%;
+  overflow: hidden;
  }
 
 span {
@@ -21,6 +21,12 @@ span {
   font-size: 0.95em;
   color: #FFFFFF;
   padding: 1.5em;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 b, strong {
