@@ -33,6 +33,9 @@
 
     <script src="https://kit.fontawesome.com/c514846d4c.js" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="/scripts/moment.js"></script>
+
+
   </head>
 
   <body>
@@ -57,9 +60,10 @@
     <main class="container">
       <section class="new-tweet">
         <!--<h2>Compose Tweet</h2>-->
-        <form action="/tweets/" method="post">
+        <form id="submit-tweet">
+          <div class="new-tweet-error"></div>
           <label for="tweet-text">What are you humming about?</label>
-          <textarea name="tweet-text" id="tweet-text" placeholder="Jot it down here!"></textarea>
+          <textarea name="text" id="tweet-text" placeholder="Jot it down here!"></textarea>
           <div class="button-counter">
             <button type="submit" class="tweet-button">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
@@ -67,89 +71,7 @@
         </form>
       </section>
 
-      <section class ="tweet-container">
-        <article class ="tweet">
-          <header>
-            <div class="profile-pic">
-              <i class="fas fa-apple-alt"></i></i>&nbsp&nbsp
-              <p>Eliza</p>
-            </div>
-            <div class="handle">
-              <p>@Schuyler</p>
-            </div>
-          </header>
-
-          <main class="posted-tweet">
-            <p class="tweet-content">Ice cream ice cream chupa chups biscuit muffin dragée caramels jelly-o sugar plum. Topping topping brownie wafer cake muffin.</p>
-          </main>
-
-          <footer>
-            <p class="timestamp">10 days ago</p>
-            <span class="icons">
-              <i class="fas fa-flag"></i>&nbsp&nbsp
-              <i class="fas fa-retweet"></i>&nbsp&nbsp
-              <i class="fas fa-heart"></i>
-            </span>
-            
-          </footer>
-        </article>
-      </section>
-
-      <section class ="tweet-container">
-        <article class ="tweet">
-          <header>
-            <div class="profile-pic">
-              <i class="fas fa-apple-alt"></i></i>&nbsp&nbsp
-              <p>George</p>
-            </div>
-            <div class="handle">
-              <p>@Washington</p>
-            </div>
-          </header>
-
-          <main class="posted-tweet">
-            <p class="tweet-content">Ice cream ice cream chupa chups biscuit muffin dragée caramels jelly-o sugar plum. Topping topping brownie wafer cake muffin.</p>
-          </main>
-
-          <footer>
-            <p class="timestamp">10 days ago</p>
-            <span class="icons">
-              <i class="fas fa-flag"></i>&nbsp&nbsp
-              <i class="fas fa-retweet"></i>&nbsp&nbsp
-              <i class="fas fa-heart"></i>
-            </span>
-            
-          </footer>
-        </article>
-      </section>
-
-      <section class ="tweet-container">
-        <article class ="tweet">
-          <header>
-            <div class="profile-pic">
-              <i class="fas fa-apple-alt"></i></i>&nbsp&nbsp
-              <p>Alexander</p>
-            </div>
-            <div class="handle">
-              <p>@Hamilton</p>
-            </div>
-          </header>
-
-          <main class="posted-tweet">
-            <p class="tweet-content">Ice cream ice cream chupa chups biscuit muffin dragée caramels jelly-o sugar plum. Topping topping brownie wafer cake muffin.</p>
-          </main>
-
-          <footer>
-            <p class="timestamp">10 days ago</p>
-            <span class="icons">
-              <i class="fas fa-flag"></i>&nbsp&nbsp
-              <i class="fas fa-retweet"></i>&nbsp&nbsp
-              <i class="fas fa-heart"></i>
-            </span>
-            
-          </footer>
-        </article>
-      </section>
+      <section class ="tweet-container"></section>
     </main>
   </body>
 </html>
