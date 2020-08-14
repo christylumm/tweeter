@@ -5,12 +5,12 @@
  */
 
 
-//use an escape function to prevent XSS 
+//use an escape function to prevent XSS
 const escape =  function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
-}
+};
 
 const createTweetElement = function(tweet) {
   const name = tweet.user.name;
@@ -20,9 +20,9 @@ const createTweetElement = function(tweet) {
   const createdAt = tweet.created_at;
 
   //calculate time/days since posted
-  const timePosted = moment(createdAt).fromNow()
+  const timePosted = moment(createdAt).fromNow();
 
-  const newTweet = 
+  const newTweet =
     ` <article class ="tweet">
     <header>
       <div class="profile-pic">
@@ -46,10 +46,10 @@ const createTweetElement = function(tweet) {
         <i class="fas fa-heart"></i>
       </span>  
     </footer>
-   </article>`
+   </article>`;
   
   return $(newTweet);
-}
+};
 
 const renderTweets = function(tweets) {
   //empty tweet container before starting the loop
@@ -60,18 +60,18 @@ const renderTweets = function(tweets) {
     // takes return value and appends it to the tweets container
     $('.tweet-container').prepend(createTweetElement(tweet));
   });
-}
+};
 
 const loadTweets = function() {
   $.ajax('/tweets', { method: 'GET'})
     .then((data) => {
-      console.log(data)
-      renderTweets(data)
-    })
+      console.log(data);
+      renderTweets(data);
+    });
 };
 
 
- $(document).ready(function() {
+$(document).ready(function() {
 
   loadTweets();
   
@@ -98,25 +98,25 @@ const loadTweets = function() {
       console.log(serialized);
   
       $.ajax({
-        type: 'POST', 
+        type: 'POST',
         url: '/tweets',
         data: serialized,
         complete: function() {
           console.log('request is complete');
           loadTweets();
         }
-      })
+      });
       //.then(() => {
-        //Reset counter
-        $('.counter').text(140);
-        //Reset input field 
-        $('#tweet-text').val("");
-        $('.new-tweet-error').text('');
-      //})
+      //Reset counter
+      $('.counter').text(140);
+      //Reset input field
+      $('#tweet-text').val("");
+      $('.new-tweet-error').text('');
+    //})
     }
-  })
+  });
   
- });
+});
 
 
 
