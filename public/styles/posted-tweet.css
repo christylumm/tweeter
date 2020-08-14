@@ -87,3 +87,102 @@ span.icons {
   margin-bottom: 40px;
 }
 
+/*----------------------------------------------------*/
+/* RESPONSIVE CODE */
+/*----------------------------------------------------*/
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 1.5rem;
+  }
+
+  body > header {
+    width: 50%;
+    margin: 1.5rem 2rem;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  main.posted-tweet p {
+    font-size: 20px;
+  }
+
+  article.tweet footer {
+    font-size: 12px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  label {
+    font-size: 25px;
+  }
+
+  ::placeholder {
+    font-size: 20px;
+  }
+
+  .compose {
+    font-size: 20px;
+  }
+
+  button {
+    font-family: 'Bungee', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-top: 0.5em;
+    padding: 5px 10px;
+    background-color: #FF9F1C;
+    border: none;
+  }
+
+  .counter {
+    font-size: 12px;
+  }
+}
+
+/* Enable larger text sizes for desktops smaller than 1023px wide, includes tablets and phones */
+@media only screen and (max-width: 1023px) {
+  main.posted-tweet p {
+    font-size: 30px;
+  }
+
+  article.tweet footer {
+    font-size: 25px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  label {
+    font-size: 30px;
+  }
+
+  ::placeholder {
+    font-size: 25px;
+  }
+
+  .compose {
+    font-size: 30px;
+  }
+
+  button {
+    font-size: 30px;
+    margin-top: 0.5em;
+    padding: 10px 20px;
+    background-color: #FF9F1C;
+    border: none;
+  }
+
+  .counter {
+    font-size: 25px;
+  }
+}
